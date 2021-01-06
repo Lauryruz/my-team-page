@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:0;
+    border:0
+}
+body{
+        font-family:"Poppins",sans-serif;
+        font-size:16px;
+        color:#000;
+        line-height:1.35;
+    }
+
+.main{
+    max-width:90em;
+    margin:0 auto;
+    padding:0 4em;
+        }
+
+@media only screen and (max-width: 62em)
+    {.main{padding:0 1em}}
+
+.container{padding:3rem 0}
+
+.header{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    margin-bottom:4rem;
+    }
+
+@media only screen and (max-width: 42em)
+    {.header{flex-direction:column}}
+
+.header h2{
+    font-family:"PT Serif",serif;
+    font-size:2.2rem;
+    }
+
+@media only screen and (max-width: 42em)
+    {.header h2{font-size:2rem;margin-bottom:2rem}}
+
+.header .about{
+    width:50%;
+    font-family:"Poppins",sans-serif}
+
+@media only screen and (max-width: 42em)
+    {.header .about{width:100%}}
+
+.header .about h3{
+    font-size:1.2rem;
+    font-weight:600;
+    margin-bottom:1rem;
+    text-transform:uppercase;}
+
+@media only screen and (max-width: 42em)
+    {.header .about h3{font-size:1rem}}
+
+.header .about p{
+    font-size:1rem;
+    font-weight:400;
+    }
+
+@media only screen and (max-width: 42em)
+    {.header .about p{font-size:.9rem}}
+
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    }
+
+    .grid .member{
+    width:27%;
+    position:relative;
+    margin-bottom:6rem;
+    color:#000;
+    }
+
+.grid .member:nth-child(3n+2)
+    {transform:translateY(6rem)}
+
+@media only screen and (max-width: 42em)
+    {.grid .member:nth-child(3n+2){transform:none}}
+
+@media only screen and (max-width: 62em)
+    {.grid .member{width:30%}}
+
+@media only screen and (max-width: 42em)
+    {.grid .member{width:45%;margin-bottom:3rem}.grid .member:nth-of-type(even){transform:translateY(3rem)}}
+
+.grid .member img{
+    width:calc(100% - 1.5rem);
+    margin-bottom:1rem;
+    transition:all .3s ease-in-out
+    }
+
+    @media only screen and (max-width: 42em)
+        {.grid .member img{width:calc(100% - 1rem);margin-bottom:0}}
+
+.grid .member .poste{
+    font-family:"PT Serif",serif;
+    font-size:.8rem;
+    text-transform:uppercase;
+    transform:rotate(90deg);
+    transform-origin:left top;
+    position:absolute;
+    top:0;
+    left:100%;
+    white-space:nowrap;
+    }
+
+@media only screen and (max-width: 42em){.grid .member .poste{font-size:.65rem}}
+
+.grid .member .name{
+    font-size:1.1rem;
+    font-weight:600;
+    }
+
+@media only screen and (max-width: 42em){.grid .member .name{font-size:.8rem}}
+
+footer { 
+    
+    font-weight:600;
+    text-align:center;
+    padding:2em 0;
+    color:#7c1e1e}
